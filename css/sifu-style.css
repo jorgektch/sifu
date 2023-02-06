@@ -18,6 +18,11 @@ h1, h2{
   color: white;
 }
 
+
+.no-hero{
+  margin-top: 8rem;
+  background-color: #011B49;
+}
 /* Barra de navegacion */
 
 .navbar {
