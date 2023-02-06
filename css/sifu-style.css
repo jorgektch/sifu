@@ -1,0 +1,15 @@
+/* Barra de navegacion */
+
+.navbar {
+    padding: 2rem;
+    background-color: #011B49;
+}
+
+.btn{
+    background-color: #011B49;
+    color: white;
+}
+.btn:hover{
+    background-color: #011B49;
+    color: white;
+}
