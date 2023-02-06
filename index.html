@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIFU - Simulador Interactivo para Física Universitaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/sifu-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" >
 </head>
 <body>
     <header>
@@ -34,18 +35,124 @@
         </nav>
     </header>
     <main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 fw-normal">SIFU</h1>
-                <p class="lead fw-normal">Simulador Interactivo para Física Universitaria</p>
-                <a class="btn btn-outline-secondary" href="simulaciones.html">Ver simulaciones</a>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+                <div class="carousel-caption text-start">
+                    <h1>Simulaciones sobre electricidad</h1>
+                    <p>Temas delectricidad.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Ver simulaciones</a></p>
+                </div>
             </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-          </div>
+            </div>
+            <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Simulaciones sobre magnetismo</h1>
+                    <p>Some representative placeholder content for the second slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+                <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+
+          
+
+
+
+        <div class="container">
+            <div class="row "><br>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">SIFU</h2>
+                    <p class="lead">Simulador Interactivo para Física Universitaria.</p>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                </div>
+            </div>
+          <!-- /END THE FEATURETTES -->
+      
+        </div><!-- /.container -->
+
+
+
+
+
+          
+        <hr class="featurette-divider">
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/jorge.jpeg" class="rounded-circle team-member" alt="jorge">
+                    <h2 class="fw-normal">Jorge Jesús<br><b>Quispe Villaverde</b></h2>
+                    <p>Lead Project & Developer</p>
+                    <a href="https://github.com/jorgektch" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="img/edgardo.jpeg" class="rounded-circle team-member" alt="edgardo">
+                    <h2 class="fw-normal">Edgardo Juan<br><b>Barboza Rincón</b></h2>
+                    <p>Designer & Developer</p>
+                    <a href="https://github.com/EJJBR" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="img/renzo.jpeg" class="rounded-circle team-member" alt="renzo">
+                    <h2 class="fw-normal">Renzo Jeanpier<br><b>Lozano Paredes</b></h2>
+                    <p>Designer & Developer</p>
+                    <a href="https://github.com/lozanorenzo" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div>
+        
+
+
+
+        
     </main>
-    <footer>
-        <p>Hecho por </p>
+    <footer class="blog-footer">
+        <div class="container text-center">
+            <p>Hecho con ❤️ por Jorge, Edgardo y Renzo</p>
+                <a href="#">Volver arriba</a>
+            </p>
+            
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
