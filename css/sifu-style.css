@@ -2,12 +2,15 @@ body{
     font-family: 'Poppins';
     
 }
+b{
+  font-weight: bold;
+}
 
 /* Barra de navegacion */
 
 .navbar {
     padding: 2rem;
-    background-color: #011B49;
+    background-color: white;
 }
 
 .btn{
@@ -18,7 +21,44 @@ body{
     background-color: #011B49;
     color: white;
 }
+.navbar-brand{
+  color: #011B49;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+.navbar-brand:hover{
+  color: #011B49;
+  
+}
+.nav-link{
+  color: #011B49;
+  font-size: 1.12rem;
+}
 
+.nav-link:hover{
+  color: #011B49;
+  font-weight: bold;
+}
+.seleccionado{
+  font-weight: bold;
+}
+
+.navbar-toggler{
+  color: #011B49;
+}
+
+
+.btn-primary{
+  border-color: white;
+  background-color: white;
+  color: #011B49;
+  
+}
+.btn-primary:hover{
+  border-color: white;
+  background-color: #011B49;
+  color: white;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -35,7 +75,7 @@ body{
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    height: 40rem;
   }
   
 
@@ -74,7 +114,21 @@ body{
 .team-member{
     height: 10.0rem;
     margin: 1.0rem;
+} 
+
+.fw-normal{
+  font-size: 1.5rem;
 }
+.bi{
+  
+  color: white;
+  font-size: 1.20rem;
+}
+.btn-floating{
+  background-color: #011B49;
+  border-radius: 50%;
+}
+
 
 
 /* Footer */

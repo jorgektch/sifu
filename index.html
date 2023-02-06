@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link seleccionado" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Simulaciones</a>
@@ -39,47 +39,37 @@
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-            <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1>Simulaciones sobre electricidad</h1>
-                    <p>Temas delectricidad.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Ver simulaciones</a></p>
+                <img class="bd-placeholder-img" width="100%" height="100%" src="img/electricidad.png"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="electricidad">
+                
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Simulaciones sobre electricidad</h1>
+                        <p>Desde Carga Eléctrica y Ley de Coulomb hasta Circuitos de Corriente Eléctrica.</p>
+                        <p><a class="btn btn-lg btn-primary" href="simulaciones.html">Ver simulaciones</a></p>
+                    </div>
                 </div>
-            </div>
             </div>
             <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>Simulaciones sobre magnetismo</h1>
-                    <p>Some representative placeholder content for the second slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <img class="bd-placeholder-img" width="100%" height="100%" src="img/magnetismo.png"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="electricidad">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Simulaciones sobre magnetismo</h1>
+                        <p>Desde Campo Magnético hasta Inducción Electromagnética.</p>
+                        <p><a class="btn btn-lg btn-primary" href="simulaciones.html">Ver simulaciones</a></p>
+                    </div>
                 </div>
-            </div>
-            </div>
-            <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-            <div class="container">
-                <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                </div>
-            </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden">Siguiente</span>
         </button>
         </div>
 
@@ -92,7 +82,24 @@
             <div class="row "><br>
                 <div class="col-md-7">
                     <h2 class="featurette-heading fw-normal lh-1">SIFU</h2>
-                    <p class="lead">Simulador Interactivo para Física Universitaria.</p>
+                    <p class="lead">El <b>Simulador Interactivo para Física Universitaria</b> (SIFU) en una iniciativa <b>Open Source</b> creada con el fin de apoyar la enseñanza de temas de Física para Ciencias e Ingeniería</p>
+                    <p class="lead">En su última versión cuenta con simulaciones para los temas:</p>
+                    <ul>
+                            <li>Carga eléctrica y ley de Coulomb</li>
+                            <li>El Campo Electroestático</li>
+                            <li>Ley de Gauss para el Campo Eléctrico</li>
+                            <li>Potencial Electrostático</li>
+                            <li>Energía Potencial Electrostática</li>
+                            <li>Capacidad Eléctrica y Condensadores</li>
+                            <li>Dialécticos</li>
+                            <li>Corriente eléctrica</li>
+                            <li>Circuitos de Corriente Eléctrica</li>
+                            <li>El Campo Magnético</li>
+                            <li>Ley de Bio-Savart</li>
+                            <li>Ley de Ampere en su Forma Integral</li>
+                            <li>Inducción Electromagnética</li>
+                        </ul>
+                    </ul>
                 </div>
                 <div class="col-md-5">
                     <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
@@ -117,7 +124,7 @@
                     <img src="img/jorge.jpeg" class="rounded-circle team-member" alt="jorge">
                     <h2 class="fw-normal">Jorge Jesús<br><b>Quispe Villaverde</b></h2>
                     <p>Lead Project & Developer</p>
-                    <a href="https://github.com/jorgektch" target="_blank" rel="noopener noreferrer">
+                    <a class="btn btn-primary btn-lg btn-floating" href="https://github.com/jorgektch" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
                     </a>
                     
@@ -126,7 +133,7 @@
                     <img src="img/edgardo.jpeg" class="rounded-circle team-member" alt="edgardo">
                     <h2 class="fw-normal">Edgardo Juan<br><b>Barboza Rincón</b></h2>
                     <p>Designer & Developer</p>
-                    <a href="https://github.com/EJJBR" target="_blank" rel="noopener noreferrer">
+                    <a class="btn btn-primary btn-lg btn-floating" href="https://github.com/EJJBR" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
                     </a>
                 </div><!-- /.col-lg-4 -->
@@ -134,7 +141,7 @@
                     <img src="img/renzo.jpeg" class="rounded-circle team-member" alt="renzo">
                     <h2 class="fw-normal">Renzo Jeanpier<br><b>Lozano Paredes</b></h2>
                     <p>Designer & Developer</p>
-                    <a href="https://github.com/lozanorenzo" target="_blank" rel="noopener noreferrer">
+                    <a class="btn btn-primary btn-lg btn-floating" href="https://github.com/lozanorenzo" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
                     </a>
                 </div><!-- /.col-lg-4 -->
