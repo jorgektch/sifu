@@ -5,7 +5,9 @@ body{
 b{
   font-weight: bold;
 }
-
+.fondo-blanco{
+  background-color: #FDFDFF;
+}
 /* Barra de navegacion */
 
 .navbar {
