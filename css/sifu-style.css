@@ -8,6 +8,16 @@ b{
 .fondo-blanco{
   background-color: #FDFDFF;
 }
+
+h1, h2{
+  color: #011B49;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.letras-blancas{
+  color: white;
+}
+
 /* Barra de navegacion */
 
 .navbar {
@@ -46,7 +56,8 @@ b{
 }
 
 .navbar-toggler{
-  color: #011B49;
+  background-color: #011B49;
+  border-color: #011B49;
 }
 
 
