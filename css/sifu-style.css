@@ -12,15 +12,18 @@ b{
 h1, h2{
   color: #011B49;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .letras-blancas{
   color: white;
 }
-
+.titulo-pagina{
+  padding: 3rem;
+  font-size: 2rem;
+}
 
 .no-hero{
-  margin-top: 8rem;
+  margin-top: 7.5rem;
   background-color: #011B49;
 }
 /* Barra de navegacion */
@@ -76,6 +79,9 @@ h1, h2{
   border-color: white;
   background-color: #011B49;
   color: white;
+}
+.btn-outline-secondary{
+  border-color: #011B49;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -188,3 +194,31 @@ i {
     }
   }
   
+
+  /* GALERIA */
+  .card{
+    border-color: #011B49;
+    border-width: 3px;
+    border-radius: 3%;
+  }
+  .nuevo-link{
+    color: #011B49;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .nuevo-link:hover{
+    color: #011B49;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .animacion-imagen{
+    border-radius: 3%  3% 0% 0%;
+    border-color: red;
+  }
+
+
+  /* LIENZO */
+  #lienzo{
+    border: 1px solid black;
+    width:100%;
+}
