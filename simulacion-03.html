@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/sifu-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <script src="js/animacion-01.js"></script>
+    <script src="js/animacion-03.js"></script>
 </head>
 <body>
     <header>
@@ -51,20 +51,17 @@
         <!-- Descripcion -->
         <div class="album py-5 bg-light">
             <div class="container">
-                <h2>Carga eléctrica y ley de Coulomb</h2>
-                <p>Veamos la interaccion entre particulas puntuales en la siguiente animacion</p>
-                <h2>Ley de Coulomb</h2>
-                <p>Los estudios de Coulomb mostraron que la fuerza de una interaccion entre cargas electricas tenia las siguientes caracteristicas:</p>
+                <h2>Ley de Gauss</h2>
+                <p>La ley de Gauss explica el ccomportamiento de un flujo electrico y la causa de este pues Gauss demostro que el flujo electrico en una superficie cerrada es causado por una carga encerrada en el interior de esa superficie cerrada.</p>
+                <h2>Flujo electrico</h2>
+                <p>Si recordamos las lineas de campo entonces el flujo electrico vendria a ser la cantidad de esas lineas que crusan una superficie, intuitivamente nos damos cuenta que si no existe una carga que genere estas lineas de campo entoces no hay flujo.</p>
+                <p>Para fines de explicar a travez de una animacion definamos lo siguiente.</p>
                 <ul>
-                    <li>Es inversamente proporcional al cuadrado de la distancia que separan a las cargas.</li>
-                    <li>Es directamente proporcional al profucto de las cargas involucradas.</li>
-                    <li>A causa del caracter vectorial de esta fuerza se respetan los signos de las cargas para la direccion.</li>
+                    <li>Sea una particula con carga Q de signo irrelevante.</li>
+                    <li>Sea una superficie euleriana cerrada.</li>
+                    <li>Tomemos los casos cuando la superficie encierra a la carga y cuando no lo hace.</li>
                 </ul>
-                <p>La constante de proporcionalidad que rige estas carcteristicas lleva por nombre constante de Coulomb y se le denota como una "k".</p>
-                <img src="img/a01-formulaLeyCoulumb.png" width="863" height="49">
-
-                    
-                    
+                <p>Es sencillo notar que cuando a particula esta encerrada en la superficie cerrada entocnes todo el flujo sale y nada entra, caso contrario del caso cuando la superficie no entierra a la carga pues notamos que todo el fujo qeu entra sale, es una forma simple de dar a entender que Coulumb descubrio que en esa condicion el flujo electrico es igual a cero.</p>
                 <canvas id="lienzo" width="1280", height="720"></canvas>
             </div>
         </div>
