@@ -129,36 +129,32 @@ function showParticles(){
 
 function animate(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawControls();
+    
     if(enPausa == false){
         handleParticles();
     }
-    showParticles();
+    showParticles(); // Primero dibuja los elementos
+    drawControls(); // Luego los botones
     requestAnimationFrame(animate);
 }
 
 // Listener que revisa si hay clicks en los controles de pausa y reinicio
 canvas.addEventListener('click', function(event){
-    //mouse.x = event.x;
-    //mouse.y = event.y;
     mouse.x = Math.round((event.pageX-canvasLeft)/canvasWidth*1280);
     mouse.y = Math.round((event.pageY-canvasTop)/canvasHeight*720);
-    //drawCircle();
-
+    
     if(Math.pow(mouse.x-h1, 2)+Math.pow(mouse.y-k1, 2) <= Math.pow(r, 2)){
         if(enPausa == false){
             enPausa = true;
-            console.log('PAUSADO');
+            //console.log('PAUSADO');
         }else{
             enPausa = false;
-            console.log('EN MOVIMIENTO');
+            //console.log('EN MOVIMIENTO');
         }
-        
     }
     if(Math.pow(mouse.x-h2, 2)+Math.pow(mouse.y-k2, 2) <= Math.pow(r, 2)){
         init();
     }
-
 }, false);
 
 function run(){
