@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIFU - Simulador Interactivo para Física Universitaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sifu-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="js/animacion-10.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">SIFU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link seleccionado" href="simulaciones.html">Simulaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="fondo-blanco">
+
+        <section class="py-7 text-center no-hero">
+            <div class="container">
+                <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light letras-blancas titulo-pagina">Simulaciones</h1>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descripcion -->
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h2>Campo Magnético</h2>
+                <p>La ley de Gauss explica el ccomportamiento de un flujo electrico y la causa de este pues Gauss demostro que el flujo electrico en una superficie cerrada es causado por una carga encerrada en el interior de esa superficie cerrada.</p>
+                <h2>Flujo electrico</h2>
+                <p>Si recordamos las lineas de campo entonces el flujo electrico vendria a ser la cantidad de esas lineas que crusan una superficie, intuitivamente nos damos cuenta que si no existe una carga que genere estas lineas de campo entoces no hay flujo.</p>
+                <p>Para fines de explicar a travez de una animacion definamos lo siguiente.</p>
+                <ul>
+                    <li>Sea una particula con carga Q de signo irrelevante.</li>
+                    <li>Sea una superficie euleriana cerrada.</li>
+                    <li>Tomemos los casos cuando la superficie encierra a la carga y cuando no lo hace.</li>
+                </ul>
+                <p>Es sencillo notar que cuando a particula esta encerrada en la superficie cerrada entocnes todo el flujo sale y nada entra, caso contrario del caso cuando la superficie no entierra a la carga pues notamos que todo el fujo qeu entra sale, es una forma simple de dar a entender que Coulumb descubrio que en esa condicion el flujo electrico es igual a cero.</p>
+                <canvas id="lienzo" width="1280", height="720"></canvas>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="blog-footer">
+        <div class="container text-center">
+            <p>Hecho con ❤️ por Jorge, Edgardo y Renzo</p>
+                <a href="#">Volver arriba</a>
+            </p>
+            
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        function resize(){    
+          $("#lienzo").outerHeight($(window).height()-$("#lienzo").offset().top- Math.abs($("#lienzo").outerHeight(true) - $("#lienzo").outerHeight()));
+        }
+        $(document).ready(function(){
+          resize();
+          $(window).on("resize", function(){                      
+              resize();
+          });
+        });
+    </script>
+</body>
+</html>

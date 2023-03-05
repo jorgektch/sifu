@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIFU - Simulador Interactivo para Física Universitaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sifu-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="js/animacion-08.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">SIFU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link seleccionado" href="simulaciones.html">Simulaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="fondo-blanco">
+
+        <section class="py-7 text-center no-hero">
+            <div class="container">
+                <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light letras-blancas titulo-pagina">Simulaciones</h1>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descripcion -->
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h2>Corriente eléctrica</h2>
+                <p>La corriente eléctrica se refiere al flujo de cargas eléctricas en movimiento que atraviesan un material conductor durante un periodo de tiempo determinado. Se expresa en C/s, coulombs por segundo en el Sistema Internacional de Unidades, y la unidad se conoce como Amperio (A). 
+                    </p>
+                    <p> Matemáticamente, la corriente es la proporción a la cual circula una carga perpendicular a una superficie. 
+                        Donde ΔQ es la cantidad de carga que pasa a través de esta superficie en un intervalo de tiempo Δt , la corriente promedio 
+                        "I<sub>prom</sub>" es igual a la carga que pasa por lo superficie en cada unidad de tiempo.</p>
+                    <P>                        \[I_{prom} = {ΔQ\over ΔT}\]</P>
+                <h2>¿Cuál es el sentido de la corriente?</h2>
+                    <p>No fue hasta el descubrimiento del efecto Hall que se logró comprobar cuál era el “sentido real" de la corriente eléctrica, siendo este desde el polo negativo (-) al positivo (+), sin embargo, antes de este descubrimiento ya se utilizaba otra dirección, “el sentido convencional” el cual es desde el polo positivo al polo negativo. Esto se debe a que en su época no se conocía la existencia de electrones y la comunidad científica decidió aplicar ese tipo de sentido de conducción.                        </p>
+                <ul>
+                    <li>Es así que a través de esta animación se busca representar cual es el sentido de la corriente eléctrica y asociarla a su cálculo de intensidad.</li>
+                </ul>
+                <canvas id="lienzo" width="1280", height="720"></canvas>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="blog-footer">
+        <div class="container text-center">
+            <p>Hecho con ❤️ por Jorge, Edgardo y Renzo</p>
+                <a href="#">Volver arriba</a>
+            </p>
+            
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        function resize(){    
+          $("#lienzo").outerHeight($(window).height()-$("#lienzo").offset().top- Math.abs($("#lienzo").outerHeight(true) - $("#lienzo").outerHeight()));
+        }
+        $(document).ready(function(){
+          resize();
+          $(window).on("resize", function(){                      
+              resize();
+          });
+        });
+    </script>
+</body>
+</html>

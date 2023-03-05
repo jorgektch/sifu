@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIFU - Simulador Interactivo para Física Universitaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sifu-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="js/animacion-09.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">SIFU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link seleccionado" href="simulaciones.html">Simulaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="fondo-blanco">
+
+        <section class="py-7 text-center no-hero">
+            <div class="container">
+                <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light letras-blancas titulo-pagina">Simulaciones</h1>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descripcion -->
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h2>Circuito eléctrico</h2>
+                <p>Un circuito es una interconexión de componentes eléctricos (como baterías, resistores, inductores,
+                     condensadores, interruptores, entre otros) que permiten generar, transportar y utilizar la corriente
+                      eléctrica. Se caracterizan, además, por ser sistemas cerrados , ya que esto permite el movimiento de
+                       la corriente eléctrica a través de sus elementos que son los siguientes:</p>
+                <ul>
+                    <li><strong>Generador: </strong>Parte del circuito donde se produce la electricidad, manteniendo una diferencia de tensión entre sus extremos.</li>
+                    <li><strong>Conductor: </strong>Hilo por donde circulan los electrones impulsados por el generador, justamente ello genera la corriente eléctrica cuya intensidad se denomina con "I".</li>
+                    <li><strong>Resistencia eléctrica: </strong>Son elementos del circuito que se oponen al paso de la corriente eléctrica, un ejemplo bastante común son las bombillas.</li>
+                    <li><strong>Interruptor: </strong>Elemento que permite abrir o cerrar el paso de la corriente eléctrica. Si el interruptor está abierto no circulan los electrones y si está cerrado permite su paso.</li>
+                </ul>
+                <h2>¿Cómo se calcula la intensidad de corriente en un circuito?</h2>
+                <p>Para hacer el cálculo de la energía en un circuito eléctrico es necesario tener conocimientos 
+                    sobre resistencia, voltaje y corriente, todo ello se resume en la ley de Ohm. 
+                    La ley de Ohm es una relación fundamental entre las tres magnitudes básicas de todos los 
+                    circuitos y enuncia lo siguiente: </p>
+                <ul>
+                    <li>La intensidad (I) que recorre un circuito es directamente proporcional a la tensión de la fuente de alimentación (V) e inversamente proporcional a la resistencia (R) en dicho circuito, lo que puede ser representado por:</li>
+                    <P>
+                        \[I = {V\over R}.\]
+    </P>
+                </ul>
+                <p>Es así que a través de esta animación se plasmó lo que es un circuito eléctrico y sus elementos  , además de asociarlo al cálculo de la intensidad de corriente eléctrica mediante la ley de Ohm. </p>
+                <canvas id="lienzo" width="1280", height="720"></canvas>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="blog-footer">
+        <div class="container text-center">
+            <p>Hecho con ❤️ por Jorge, Edgardo y Renzo</p>
+                <a href="#">Volver arriba</a>
+            </p>
+            
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        function resize(){    
+          $("#lienzo").outerHeight($(window).height()-$("#lienzo").offset().top- Math.abs($("#lienzo").outerHeight(true) - $("#lienzo").outerHeight()));
+        }
+        $(document).ready(function(){
+          resize();
+          $(window).on("resize", function(){                      
+              resize();
+          });
+        });
+    </script>
+</body>
+</html>
