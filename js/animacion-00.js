@@ -159,6 +159,7 @@ canvas.addEventListener('click', function(event){
 
 function run(){
     init();
+    
     animate();
 }
 run();

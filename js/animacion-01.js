@@ -121,15 +121,15 @@ function iniciar(){
     // Texto
     canvas.fillStyle = "black";
     canvas.font = "bold 18px verdana, sans-serif";
-    canvas.fillText("Segun la ley de Coulomb la fuerza varia en funcion del cuadrado de la distancia, entonces:", 20, 590);
-    canvas.fillText("En los puntos a y -a:", 20, 620);
+    //canvas.fillText("Segun la ley de Coulomb la fuerza varia en funcion del cuadrado de la distancia, entonces:", 20, 590);
+    //canvas.fillText("En los puntos a y -a:", 20, 620);
     canvas.fillText("a", 775, 550);
     canvas.fillText("-a", 490, 550);
     canvas.fillText("b", 975, 550);
     canvas.fillText("-b", 290, 550);
     canvas.fillText("c", 1155, 550);
     canvas.fillText("-c", 110, 550);
-    var fuerzaPa = document.createElement("img");
+    /*var fuerzaPa = document.createElement("img");
     fuerzaPa.src = "img/a01-fuerzaPuntosa-a.png";
     fuerzaPa.addEventListener("load", function(){
         canvas.drawImage(fuerzaPa,20,625,250, 95);
@@ -170,7 +170,7 @@ function iniciar(){
     canvas.fillText("Es graficamente evidente que:",870, 620);
     canvas.fillText("2a<2b<2c", 870, 650);
     canvas.fillText("Se nota que la magnitud de la fuerza", 870, 680);
-    canvas.fillText("disminuye cuando aumenta la distancia.", 870, 710);
+    canvas.fillText("disminuye cuando aumenta la distancia.", 870, 710);*/
     window.requestAnimationFrame(iniciar);
 }
 window.requestAnimationFrame(iniciar);
