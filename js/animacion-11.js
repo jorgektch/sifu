@@ -81,34 +81,12 @@ function drawControls(){
 /* DESDE ESTA PARTE PUEDEN/DEBEN EDITAR (PARA DEFINIR SUS CLASES, FUNCIONES, POSICIONES INICIALES Y FORMA DE MOVERSE) */
 
 // Clases con los elementos que se dibujaran
-class Particle{
-    constructor(){
-        //this.x = mouse.x;
-        //this.y = mouse.y;
-        this.x = Math.random()*canvasWidth;
-        this.y = Math.random()*canvasHeight;
-        this.size = Math.random() * 5 - 1;
-        this.speedX = Math.random() * 3 - 1.5;
-        this.speedY = Math.random() * 3 - 1.5;
-    }
-    update(){
-        this.x = this.x + this.speedX;
-        this.y = this.y + this.speedY;
-    }
-    draw(){
-        ctx.fillStyle = 'blue';
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, 50, 0, 2*Math.PI);
-        ctx.fill();
-    }
-}
-
 class ConductingWire{
     constructor(){
         this.w = 800;
         this.h = 75;
         this.x = 1280/2-this.w/2;
-        this.y = 720/2-this.h/2;
+        this.y = 200;
         this.speedX = 0;
         this.speedY = 0;
     }
@@ -135,7 +113,7 @@ class ConductingPart{
         this.w = 60;
         this.h = 75;
         this.x = 980;
-        this.y = 720/2-this.h/2;
+        this.y = 200;
         this.speedX = -5;
         this.speedY = 0;
     }
@@ -180,28 +158,32 @@ class RightHand{
         var img = document.createElement("img");
         img.src = "img/a11-right-hand.png";
         ctx.drawImage(img, this.x, this.y,this.w, this.h);
+
+        var img = document.createElement("img");
+        img.src = "img/a11-lines.png";
+        ctx.drawImage(img, this.x, this.y-275,this.w, this.h);
     }
 }
 
 // Funcion que inicializa las posiciones de los elementos
 function init(){
     cw = new ConductingWire();
-    rh = new RightHand();
     cp = new ConductingPart();
+    rh = new RightHand();
 }
 
 // Funcion que mueve las posiciones de los elementos
 function handleElements(){
     cw.update();
-    rh.update();
     cp.update();
+    rh.update();
 }
 
 // Funcion que muestra los elementos
 function showElements(){
     cw.draw();
-    rh.draw();
     cp.draw();
+    rh.draw();
 }
 
 /* HASTA ESTA PARTE PUEDEN/DEBEN EDITAR */

@@ -52,22 +52,25 @@
         <!-- Descripcion -->
         <div class="album py-5 bg-light">
             <div class="container">
-                <h2>Carga eléctrica y ley de Coulomb</h2>
-                <p>Veamos la interaccion entre particulas puntuales en la siguiente animacion</p>
-                <h2>Funciones</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores error nulla ex maiores commodi ipsam eligendi excepturi aliquam, ab fuga voluptas repellendus quam vero at exercitationem tempore sed distinctio!</p>
-                <!--
-                <p>
-                    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-                    \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+                <h2>Ley Biot-Savart</h2>
+                <p>La ley de Biot-Savart, relaciona los campos magnéticos con las corrientes que los crean. De una manera similar a como la ley de Coulomb relaciona los campos eléctricos con las cargas puntuales que las crean. La obtención del campo magnético resultante de una distribución de corrientes, implica un producto vectorial, y cuando la distancia desde la corriente al punto del campo está variando continuamente, se convierte inherentemente en un problema de cálculo diferencial.
                 </p>
-                -->
+                <p class="text-center"><img height="300" src="img/a11-bsav.png" alt=""></ class="text-center">
+                
 
-                <ul>
-                    <li>Contenido</li>
-                    <li>Contenido</li>
-                    <li>Contenido</li>
-                </ul>
+                <p>
+                    \[
+                    \vec{d{\bf{B}}}\ = \frac{{\mu _0 }}{{4\pi }}\frac{{I \vec{d{\bf{L}}} \times {\bf{\hat r}}}}{{r^2 }}
+                        
+                    \]
+                    Donde: \(\vec{d{\bf{B}}}\) es el campo magnético de un diferencial del conductor,
+                    \(\vec{d{\bf{L}}}\) es la longitud infinitesimal del conductor que transporta la corriente eléctrica \(I\) y
+                    \(\bf{\hat r}\) es el vector unitario para especificar la dirección del vector distancia \(r\) desde la corriente al punto del campo.
+                </p>
+                <h2>Funciones</h2>
+                <p>En la simulación podemos apreciar las direcciones del la corriente, campo magnético y desplazamiento, siguiendo la ley de Biot-Savart y la regla de la mano derecha.</p>
+                <p>Puedes pausar y reiniciar la simulación utilizando los botones.</p>
+                
                 <canvas id="lienzo" width="1280", height="720"></canvas>
             </div>
         </div>
